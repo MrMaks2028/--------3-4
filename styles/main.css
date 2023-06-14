@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    box-sizing: border-box;
+}
+
+.block{
+    font-size: 2em;
+    font-style: italic;
+}
+
+.console{
+    margin: 30px;
+    padding: 10px 12px;
+    border: 3px solid darkgray;
+
+    width: 300px;
+    min-height: 200px;
+
+    background-color: black;
+    
+    color: white;
+}
+
+.console-label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+}
+
+#output{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}

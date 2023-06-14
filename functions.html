@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions / Функции</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+
+    <div class="console">
+        <h4 class="console-label">Вывод:</h4>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        /*hi(); 
+        console.log(sum(4.5, 6));
+
+        //Вывод Hello World в консоль
+        function hi(){
+            console.log('Hello world!');
+        }
+        //Принимает два числа или две строки и возвращает их сумму
+        function sum(num1, num2){
+            return num1 + num2;
+            console.log('!!!'); // не отработает
+        }*/
+        
+        //document.write('<p>Hello world!</p>');
+        //addBlocks(+prompt('Введите кол-во блоков:'));
+
+        var str;
+        do{
+            str = prompt('Введите сообщение в консоль(пустой ввод для отмены):');
+            if(str != '')
+                consoleOut(str);
+        }while(str != '');
+
+        function consoleOut(msg) {
+            output.innerText += msg + '\n';
+        }
+
+
+
+        //Добавление абзацев в переданном кол-ве в документ
+        /*function addBlocks(blocksNumber){   
+            for(var i = 0; i < blocksNumber; i++)
+                document.write(`<p style="color: red" class="block">Блок ${i}</p> `);
+        }*/
+    </script>
+</body>
+</html>
